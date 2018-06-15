@@ -103,9 +103,9 @@ a:focus {
   display: flex;
   margin: 2px;
   padding: 20px;
-  border: 1px solid #dadada;
+  border: 5px solid #AEAFAF;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #377341;
 }
 
 .profile-icon {
@@ -116,10 +116,19 @@ a:focus {
   flex: 1 1 80%;
   margin-left: 10px;
   max-height: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  border: 5px solid #494949
+  
 }
 
 .profile-picture p {
   margin: 0;
+}
+
+.profile-name{
+  font-size: 20px;
 }
 
 .profile-picture .profile-name {
