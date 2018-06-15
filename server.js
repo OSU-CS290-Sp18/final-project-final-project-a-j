@@ -3,65 +3,65 @@ var url = require('url');
 var fs = require('fs');
 
 var homeHTML;
-fs.readFile('public/home.html', 'utf8', function read(err, data){
+fs.readFile('home.html', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterHTML = data;
+   homeHTML = data;
    console.log("+++ home.html was read");
 });
 
 var homeStyle;
-fs.readFile('public/home.css', 'utf8', function read(err, data){
+fs.readFile('home.css', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterStyle = data;
+   homeStyle = data;
    console.log("+++ home.css was read");
 });
 
 var homeJS;
-fs.readFile('public/home.js', 'utf8', function read(err, data){
+fs.readFile('home.js', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterJS = data;
+   homeJS = data;
    console.log("+++ home.js was read");
 });
 
 var profileHTML;
-fs.readFile('public/profile.html', 'utf8', function read(err, data){
+fs.readFile('profile.html', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterError = data;
+   profileHTML = data;
    console.log("+++ profile.html was read");
 });
 
 var profileJS;
-fs.readFile('public/profile.js', 'utf8', function read(err, data){
+fs.readFile('profile.js', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterError = data;
+   profileJS = data;
    console.log("+++ profile.js was read");
 });
 
 var profileStyle;
-fs.readFile('public/profile.css', 'utf8', function read(err, data){
+fs.readFile('profile.css', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterError = data;
+   profileStyle = data;
    console.log("+++ profile.css was read");
 });
 
 var profileError;
-fs.readFile('public/404.html', 'utf8', function read(err, data){
+fs.readFile('404.html', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   tweeterError = data;
+   profileError = data;
    console.log("+++ 404.html was read");
 });
 
