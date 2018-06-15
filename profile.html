@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>GrahmKracker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="profile.css" media="screen">
+
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+    <script src="profile.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#"><h1 class="site-title"><i class="fab fa-angellist"></i>GrahmKracker</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <!--<li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+	  </li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+
+      <article class="profile-main">
+	 <div class="main-content">
+	   <image class="profile-picture-main" src="https://i2.wp.com/www.route66news.com/wp-content/uploads/2017/02/President-Donald-Trump-min.jpg?resize=500%2C300" />
+           <p class="description">
+             Donald Trump
+           </p>
+         </div>
+       </article>
+    
+
+      <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://i2.wp.com/www.route66news.com/wp-content/uploads/2017/02/President-Donald-Trump-min.jpg?resize=500%2C300" />
+          <p class="profile-name">
+            Donald Trump
+          </p>
+        </div>
+      </article>
+
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWm4uNu8SAK6rkvq2EsEjrLl5YK2p9gajzz9AkPeL77Nrp3fn-CQ" />
+		  <p class="profile-name">
+            Kanye West
+          </p>
+        </div>
+      </article>
+	  
+	        <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://i.dawn.com/medium/2018/01/5a5c1e4985edb.jpg" />
+          <p class="profile-name">
+            Bill Gates
+          </p>
+        </div>
+      </article>
+	  
+	        <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://i.dawn.com/medium/2017/03/58d9f89745239.jpg" />
+          <p class="profile-name">
+            Elon Musk
+          </p>
+        </div>
+      </article>
+	  
+    </main>
+
+    <button type="button" id="create-profile-button"><i class="fas fa-plus-square"></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-profile-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Create a profile</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="profile-input-element">
+            <label for="profile-picture-input">Picture Url</label>
+            <textarea id="profile-picture-input"></textarea>
+          </div>
+          <div class="profile-input-element">
+            <label for="profile-name-input">Description</label>
+            <input type="text" id="profile-name-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Photo Card</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
