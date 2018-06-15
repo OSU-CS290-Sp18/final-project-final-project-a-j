@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>GrahmKracker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="profile.css" media="screen">
+
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+    <script src="profile.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#"><h1 class="site-title"><i class="fab fa-angellist"></i>GrahmKracker</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <!--<li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+	  </li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+
+      <article class="profile-main">
+	 <div class="main-content">
+	   <image class="profile-picture-main" src="https://i2.wp.com/www.route66news.com/wp-content/uploads/2017/02/President-Donald-Trump-min.jpg?resize=500%2C300" />
+           <p class="description">
+             Donald Trump
+           </p>
+         </div>
+       </article>
+    
+
+      <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://musiqcafe.com/news/wp-content/uploads/2017/12/donald-trump-lifts-ban-on-mining-near-nature-reserve-250x150.jpg" />
+          <p class="profile-name">
+            What separates the winners from the losers is how a person reacts to each new twist of fate. 
+          </p>
+        </div>
+      </article>
+
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://thebronxchronicle.com/wp-content/uploads/2016/03/Doanld-J-Trump-250x150.jpg" />
+		  <p class="profile-name">
+            It's always good to be underestimated.
+          </p>
+        </div>
+      </article>
+	  
+	        <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://freshwallpapers.net/imagecache/thumbnails/11072/250x150.png" />
+          <p class="profile-name">
+            Everything in life is luck.
+          </p>
+        </div>
+      </article>
+	  
+	        <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQm6YlBgixjIqNehvYRB6on0nhiBgLRGLBCV3yBsp3rE59WoHV0Q" />
+          <p class="profile-name">
+            You have to think anyway, so why not think big?
+          </p>
+        </div>
+      </article>
+	  
+      <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://freshwallpapers.net/imagecache/thumbnails/11074/250x150.png" />
+          <p class="profile-name">
+            Sometimes by losing a battle you find a new way to win the war.
+          </p>
+        </div>
+      </article>
+	  
+      <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://www.jpmsportsertainment.com/wp-content/themes/Canyon/timthumb.php?src=http://www.jpmsportsertainment.com/wp-content/uploads/2016/05/trump.png&h=150&w=250&zc=1" />
+          <p class="profile-name">
+            It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.
+          </p>
+        </div>
+      </article>
+
+      <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3w-I9nByv_DQjfToC5VVV5YhlIyHVuDfZVmzmR1VL8soHqf2Pug" />
+          <p class="profile-name">
+            Part of being a winner is knowing when enough is enough. Sometimes you have to give up the fight and walk away, and move on to something that's more productive.
+          </p>
+        </div>
+      </article>
+	  
+    </main>
+
+    <button type="button" id="create-profile-button"><i class="fas fa-plus-square"></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-profile-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Create a profile</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="profile-input-element">
+            <label for="profile-picture-input">Picture Url</label>
+            <textarea id="profile-picture-input"></textarea>
+          </div>
+          <div class="profile-input-element">
+            <label for="profile-name-input">Description</label>
+            <input type="text" id="profile-name-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Photo Card</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -96,11 +96,14 @@ a:focus {
   margin: 50px 10%;
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
 }
 
 .profile {
   flex: 0 1 30%;
   display: flex;
+  align-items: center;
+  
   margin: 2px;
   padding: 20px;
   border: 5px solid #AEAFAF;
@@ -109,8 +112,9 @@ a:focus {
 }
 
 .profile-main {
-  flex: 0 1 30%;
+  flex: 0 1 100%;
   display: flex;
+  
   margin: 2px;
   padding: 20px;
   border: 5px solid #AEAFAF;
@@ -125,7 +129,10 @@ a:focus {
 
 
 .profile-picture {
-  flex: 1 1 80%;
+  display:flex;
+  flex: 1 1 30%;
+  flex-wrap: wrap;
+  
   margin-left: 10px;
   max-height: 150px;
   min-height: 150px;
@@ -137,6 +144,7 @@ a:focus {
 
 .profile-picture-main {
   flex: 1 1 80%;
+  float: left;
   margin-left: 10px;
   max-height: 150px;
   min-height: 150px;
@@ -156,17 +164,22 @@ a:focus {
 
 .profile-name{
   font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+  
+  margin-left: 10px;
 }
 
 .description{
-  font-size: 20px;
+  font-size: 100px;
+  float: right;
+  left: 600px;
+  bottom: 350px;
+  margin: 5% 0 0 0;
 }
 
-.profile-picture .profile-name {
-  margin-top: 8px;
-  text-align: right;
-  font-weight: bold;
-}
+
 
 .profile-picture-main .description {
   margin-top: 8px;
