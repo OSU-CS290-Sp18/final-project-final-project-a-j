@@ -115,6 +115,7 @@ a:focus {
 .profile-picture {
   flex: 1 1 80%;
   margin-left: 10px;
+  max-height: 300px;
 }
 
 .profile-picture p {
@@ -263,10 +264,10 @@ a:focus {
 }
 
 .modal-footer .modal-accept-button {
-  background-color: #319df6;
+  background-color: #2DCDB2;
   color: #fff;
 }
 
 .modal-footer .modal-accept-button:hover {
-  background-color: #087dde;
+  background-color: #DC1E1E;
 }
