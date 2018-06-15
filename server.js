@@ -29,15 +29,41 @@ fs.readFile('home.js', 'utf8', function read(err, data){
    console.log("+++ home.js was read");
 });
 
-var profileHTML;
-fs.readFile('profile.html', 'utf8', function read(err, data){
+var trumpHTML;
+fs.readFile('trump.html', 'utf8', function read(err, data){
    if(err){
       throw err;
    }
-   profileHTML = data;
-   console.log("+++ profile.html was read");
+   trumpHTML = data;
+   console.log("+++ trump.html was read");
 });
 
+var kanyeHTML;
+fs.readFile('kanye.html', 'utf8', function read(err, data){
+   if(err){
+      throw err;
+   }
+   kanyeHTML = data;
+   console.log("+++ kanye.html was read");
+});
+
+var billHTML;
+fs.readFile('bill.html', 'utf8', function read(err, data){
+   if(err){
+      throw err;
+   }
+   billHTML = data;
+   console.log("+++ bill.html was read");
+});
+
+var elonHTML;
+fs.readFile('elon.html', 'utf8', function read(err, data){
+   if(err){
+      throw err;
+   }
+   elonHTML = data;
+   console.log("+++ elon.html was read");
+});
 var profileJS;
 fs.readFile('profile.js', 'utf8', function read(err, data){
    if(err){
@@ -89,8 +115,20 @@ http.createServer(function(req, res){
       res.statusCode = 200;
       //console.log("Writing index.js");
    }
-   else if(req.url === '/profile.html'){
-      res.write(profileHTML);
+   else if(req.url === '/trump.html'){
+      res.write(trumpHTML);
+      res.statusCode = 200;
+   }
+   else if(req.url === '/bill.html'){
+      res.write(billHTML);
+      res.statusCode = 200;
+   }
+   else if(req.url === '/kanye.html'){
+      res.write(kanyeHTML);
+      res.statusCode = 200;
+   }
+   else if(req.url === '/elon.html'){
+      res.write(elonHTML);
       res.statusCode = 200;
    }
    else if(req.url === '/profile.css'){
