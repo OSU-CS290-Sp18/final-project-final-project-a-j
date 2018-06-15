@@ -7,7 +7,7 @@ profileBtn.addEventListener('click', function (){
 });
 
 
-var profilePicture = document.getElementById("profile-text-input");
+var profilePicture = document.getElementById("profile-picture-input");
 var profileName = document.getElementById("profile-name-input");
 var closeBtn = document.getElementsByClassName('modal-close-button')[0];
 closeBtn.addEventListener('click', function (){
@@ -46,13 +46,17 @@ acceptBtn.addEventListener('click', function (event){
    var xPrime = x.cloneNode(true);
    var y = document.getElementsByClassName('profile-container')[0];
    y.appendChild(xPrime);
-
+   
    var z = document.getElementsByClassName('profile');
    var a = document.getElementsByClassName('profile-name')[z.length-1];
-   var b = document.getElementsByClassName('profile-text')[z.length-1];
+   a.href ='#';
+   var b = document.getElementsByClassName('profile-picture')[z.length-1];
 
-   a.textpicture=profileName.value;
-   b.textpicture=profilePicture.value;
+   console.log(a.href);
+   a.textContent=profileName.value;
+   console.log(a.href);
+   b.src=profilePicture.value;
+   console.log(b);
 
    profilePicture.value = "";
    profileName.value = "";						    
