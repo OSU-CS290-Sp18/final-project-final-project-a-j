@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>GrahmKracker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="profile.css" media="screen">
+
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+    <script src="profile.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#"><h1 class="site-title"><i class="fab fa-angellist"></i>GrahmKracker</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <!--<li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+	  </li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+
+      <article class="profile-main">
+	 <div class="main-content">
+	   <image class="profile-picture-main" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWm4uNu8SAK6rkvq2EsEjrLl5YK2p9gajzz9AkPeL77Nrp3fn-CQ" />
+           <p class="description">
+             Kanye West
+           </p>
+         </div>
+       </article>
+
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://instrumentalfx.co/wp-content/uploads/2017/10/Kanye-West-Real-Friend-250x150.jpg" />
+		  <p class="profile-name">
+            My greatest pain in life is that I will never be able to see myself perform live.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="http://hiphopflava.net/images/artist_us/kanye-west.jpg" />
+          <p class="profile-name">
+            Nothing in life is promised except death.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://www.gossipcop.com/wp-content/uploads/2017/06/Kim-Kardashian-Fake-Split-Stories-250x150.jpg" />
+          <p class="profile-name">
+            We all self-conscious. I'm just the first to admit it.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://earmilk.com/wp-content/uploads/2011/01/kanye2-1.jpg" />
+          <p class="profile-name">
+            My music isn’t just music — it’s medicine.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_PrOM29SjP8U0tBz4HfgECKlssIIXn8Si15VRvXmVE5jP971TJQ" />
+          <p class="profile-name">
+            I know I got angels watching me from the other side.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGhXyTxgA0XKlEsrHrdJSPWlWdz7ExX3tL7PVCbvsg08KNxcseg" />
+          <p class="profile-name">
+            I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying.
+          </p>
+        </div>
+      </article>
+	  
+	  <article class="profile">
+        <div class="profile-content">
+          <image class="profile-picture" src="https://media2.woopic.com/api/v1/images/93%2Fwebedia-musique-news%2Fea1%2Faf2%2F76a8efa3536fab51710834e1f8%2Fkanye-west-livre-un-single-sur-ses-dettes%7C1269948-kanye-west-orig-1.jpg?format=250x150&facedetect=1&quality=85" />
+          <p class="profile-name">
+            If you have the opportunity to play this game of life you need to appreciate every moment. a lot of people don't appreciate the moment until it's passed.
+          </p>
+        </div>
+      </article>
+	  
+    </main>
+
+    <button type="button" id="create-profile-button"><i class="fas fa-plus-square"></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-profile-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Create a profile</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="profile-input-element">
+            <label for="profile-picture-input">Picture Url</label>
+            <textarea id="profile-picture-input"></textarea>
+          </div>
+          <div class="profile-input-element">
+            <label for="profile-name-input">Description</label>
+            <input type="text" id="profile-name-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Photo Card</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

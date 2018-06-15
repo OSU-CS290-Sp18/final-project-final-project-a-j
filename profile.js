@@ -47,8 +47,7 @@ acceptBtn.addEventListener('click', function (event){
   picture.classList.add('profile-picture');
   picture.src = profilePicture.value;
 
-  var author = document.createElement('a');
-  author.href = '#';
+  var author = document.createElement('p');
   author.textContent = profileName.value;
 
   var attribution = document.createElement('p');
@@ -74,26 +73,3 @@ acceptBtn.addEventListener('click', function (event){
    modal.style.display='none';
    backdrop.style.display='none';
 });
-
-var searchBar = document.getElementById("navbar-search-input");
-var searchBtn = document.getElementById("navbar-search-button");
-searchBtn.addEventListener('click', search);
-searchBar.addEventListener('keyup', search);
-
-function search(event){
-   var profiles = document.getElementsByClassName('profile');
-   var profileNames = document.getElementsByClassName('profile-name');
-   for (i=0; i<profiles.length; i++) {
-   //var a=profiles[i].childNodes[3].childNodes[1].picturepicture.toLowerCase;
-   //var b=profiles[i].childNodes[3].childNodes[3].picturepicture.toLowerCase;  //attempted to make it lower case but it wouldnt work
-   //var c=searchBar.value.toLowerCase;
-      //if((a.includes(c)) || (b.includes(c))){
-      if (profileNames[i].textContent.includes(searchBar.value)){
-         profiles[i].classList.remove('hidden');
-         continue;
-      }
-      else {
-         profiles[i].classList.add('hidden');
-      }
-   }
-}
