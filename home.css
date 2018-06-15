@@ -38,7 +38,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #DC1E1E;
+  color: #2DCDB2;
 }
 
 a:focus {
@@ -99,13 +99,13 @@ a:focus {
 }
 
 .profile {
-  flex: 0 1 28%;
+  flex: 0 1 45%;
   display: flex;
   margin: 2px;
   padding: 20px;
   border: 5px solid #AEAFAF;
   border-radius: 2px;
-  background-color: #377341;
+  background-color: #DC1E1E;
 }
 
 .profile-icon {
@@ -117,8 +117,8 @@ a:focus {
   margin-left: 10px;
   max-height: 300px;
   min-height: 300px;
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 500px;
+  min-width: 500px;
   border: 5px solid #494949
   
 }
@@ -146,7 +146,7 @@ a:focus {
   border: none;
   border-radius: 30px;
   font-size: 30px;
-  background-color: #2DCDB2;
+  background-color: #DC1E1E;
   color: #fff;
   cursor: pointer;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
@@ -160,7 +160,7 @@ a:focus {
   width: 66px;
   border-radius: 33px;
   font-size: 36px;
-  background-color: #DC1E1E;
+  background-color: #2DCDB2;
 }
 
 #create-profile-button:focus {
@@ -273,10 +273,10 @@ a:focus {
 }
 
 .modal-footer .modal-accept-button {
-  background-color: #2DCDB2;
+  background-color: #DC1E1E;
   color: #fff;
 }
 
 .modal-footer .modal-accept-button:hover {
-  background-color: #DC1E1E;
+  background-color: #2DCDB2;
 }
