@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>GrahmKracker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css" media="screen">
+
+    <!-- This script incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" defer></script>
+
+    <script src="index.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <a href="#"><h1 class="site-title"><i class="fab fa-angellist"></i> GrahmKracker</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navlink active"><a href="#">Home</a></li>
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+
+      <article class="profile">
+        <div class="profile-content">
+          <p class="profile-picture">
+            Sitting in web dev... This class is so awesome!
+          </p>
+          <p class="profile-name">
+            <a href="#">CSMajor2018</a>
+          </p>
+        </div>
+      </article>
+
+    </main>
+
+    <button type="button" id="create-profile-button"><i class="fas fa-user-plus"></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-profile-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Create a profile</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="profile-input-element">
+            <label for="profile-picture-input">Profile Picture Url</label>
+            <textarea id="profile-picture-input"></textarea>
+          </div>
+          <div class="profile-input-element">
+            <label for="profile-name-input">Name</label>
+            <input type="text" id="profile-name-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create profile</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
