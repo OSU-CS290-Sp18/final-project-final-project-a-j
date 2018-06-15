@@ -10,10 +10,10 @@ a {
 
 .site-title {
   margin: 0;
-  padding: 10px 20px;
-  font-size: 30px;
+  padding: 10px 35%;
+  font-size: 50px;
   font-weight: 100;
-  background-color: #DC1E1E;
+  background-color: #CDAC50;
   color: #fff;
 }
 
@@ -51,7 +51,7 @@ a:focus {
 }
 
 .navlink.active {
-  box-shadow: inset 0 -3px #DC1E1E;
+  box-shadow: inset 0 -3px #CDAC50;
 }
 
 .navbar-search {
@@ -105,7 +105,7 @@ a:focus {
   padding: 20px;
   border: 5px solid #AEAFAF;
   border-radius: 2px;
-  background-color: #DC1E1E;
+  background-color: #CDAC50;
 }
 
 .profile-icon {
@@ -146,7 +146,7 @@ a:focus {
   border: none;
   border-radius: 30px;
   font-size: 30px;
-  background-color: #DC1E1E;
+  background-color: #CDAC50;
   color: #fff;
   cursor: pointer;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
@@ -273,7 +273,7 @@ a:focus {
 }
 
 .modal-footer .modal-accept-button {
-  background-color: #DC1E1E;
+  background-color: #CDAC50;
   color: #fff;
 }
 
